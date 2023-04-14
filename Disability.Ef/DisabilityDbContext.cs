@@ -1,5 +1,5 @@
 ﻿using Disability.Data.Entities;
-
+using Disability.Data.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -34,16 +34,17 @@ namespace Disability.Ef
         }
 
 
-        public DbSet<DisProduct> DisProducts { set; get; }  
-        public DbSet<DisNews> DisNews { set; get; }
+        public DbSet<DisProductInformation> DisProducts { set; get; }  
+        public DbSet<DisNewsInformation> DisNews { set; get; }
 
 
 
 
         protected override void OnModelCreating (ModelBuilder modelbuilder)
         {
-            modelbuilder.Entity<DisNews>(eb => { eb.HasNoKey(); });
-            modelbuilder.Entity<DisProduct>(eb => { eb.HasNoKey(); });
+
+            modelbuilder.Entity<DisProductInformation>(eb => { eb.HasNoKey(); });
+            modelbuilder.Entity<DisNewsInformation>(eb => { eb.HasNoKey(); });
         }
 
 

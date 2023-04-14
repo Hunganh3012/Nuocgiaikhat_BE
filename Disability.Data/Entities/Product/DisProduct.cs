@@ -18,10 +18,9 @@ namespace Disability.Data.Entities
         public string Name { set; get; }
         public decimal? sale { set; get; }
         public decimal priceOld { set; get; }
-
-        
         public string image { set; get; }
         public string detail { set; get; }
+        public int? isDelete { set; get; }
 
         
         

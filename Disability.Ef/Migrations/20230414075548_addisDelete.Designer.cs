@@ -4,14 +4,16 @@ using Disability.Ef;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Disability.Ef.Migrations
 {
     [DbContext(typeof(DisabilityDbContext))]
-    partial class DisabilityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230414075548_addisDelete")]
+    partial class addisDelete
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

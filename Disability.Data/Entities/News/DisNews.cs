@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 {   
     [Table("DisNews")]
     public class DisNews
-    {
+    { 
         [Required]
         [StringLength(50)]
         public string NewId { set; get; }
@@ -21,6 +21,7 @@ using System.Threading.Tasks;
         public string Name { set; get; }
         public string image { set; get; }
         public string detail { set; get; }
+        public int? isDelete { set; get; }
 
     }
 }
