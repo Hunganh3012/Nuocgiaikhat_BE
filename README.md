@@ -10,15 +10,23 @@
 
 
 -------Apllication
+
+
 			|
 			|
 			|---->Disability.Api(Console Application)
+			
+			
 			|			|
 			|			|->Controller
 			|			|->Authrozion
 			|
+			
+			
 			|---->Disability.Apllication(Class Library)
 						|
+						
+						
 						|->AutoMaper
 						|->Implementation
 						|		|-->Service.cs
@@ -29,6 +37,9 @@
 						|->ViewModel
 								|-->Dto.cs
 -------Domain
+
+
+
 			|
 			|
 			|---->Disability.Data(Class Library)			
